@@ -1,0 +1,17 @@
+COMANDOS PARA TRABAJAR CON RAMAS-----
+
+git status //Sirve para saber en que rama estamos ubicados
+git branch [Nombre de Rama] //Sirve para crear una rama
+git checkout [Nombre de Rama] //Sirve para moverse a otra rama
+git checkout -b [Nombre de Rama] //Sive para crear una rama y moverse a ella
+git branch -l // Sirve para listar todas las ramas existentes
+git branch -d [Nombre de Rama] //Sirve para eliminar la rama
+git branch -m [Nombre actual de Rama] [Nombre antiguo de Rama] //Sirve para renombrar una rama
+
+INFORMACION SOBRE EL MERGE
+.- Si se realiza el merge desde una rama con otra, la que se modifica
+es la primera
+.- Un merge es un commit, por ello necesita de un comentario
+.- Si existe cambios sobre un mismo codigo, se mantiene el del branch solicintante
+
+git merge [Nombre de Rama Secundaria] "[Comentarios]" 

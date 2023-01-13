@@ -1,0 +1,24 @@
+COMANDOS PARA TRABAJAR CON REPOSITORIO REMOTO-----
+
+git remote add origin [LINK HTTPS DE REPOSITORIO EN GITHUB] //Sirve para indicar a git que tenemos
+un repositorio remoto
+git remote // Sirve para verificar si se tiene un origen remoto
+git remote -v //Sirve para detallar la ubicacion de los repos remotos
+
+
+[git clone url_del_servidor_remoto]
+Nos permite descargar los archivos 
+de la última versión de la rama principal 
+y todo el historial de cambios en la carpeta .git
+
+[git push] 
+Luego de hacer git add y git commit debemos 
+ejecutar este comando para mandar los cambios 
+al servidor remoto.
+
+[git fetch] 
+Lo usamos para traer actualizaciones 
+del servidor remoto y guardarlas en nuestro 
+repositorio local (en caso de que hayan, por supuesto).
+
+git branch -M main //Cambia el nombre del master a main, facilita comunicacion con github

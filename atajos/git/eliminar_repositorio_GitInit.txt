@@ -1,0 +1,3 @@
+cd carpeta/
+rm -rf .git
+git branch -M main //Cambia el nombre del master a main, facilita comunicacion con github
