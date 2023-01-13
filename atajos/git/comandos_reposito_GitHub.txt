@@ -4,7 +4,9 @@ git remote add origin [LINK HTTPS DE REPOSITORIO EN GITHUB] //Sirve para indicar
 un repositorio remoto
 git remote // Sirve para verificar si se tiene un origen remoto
 git remote -v //Sirve para detallar la ubicacion de los repos remotos
-
+git push origin [nombre de rama]//Sirve para enviar a origin contenido local
+git pull origin [nombre de rama actual]//Sirve para traer a rama actual contenido de remoto
+git pull origin main --allow-unrelated-histories //Sirvee para forzar traer el contenido de remoto
 
 [git clone url_del_servidor_remoto]
 Nos permite descargar los archivos 
