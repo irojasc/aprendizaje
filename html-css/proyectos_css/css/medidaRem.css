@@ -1,0 +1,21 @@
+/* Esta parte siempre tiene que ir todos los archivos css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+/* ----------------------------------------------------------- */
+
+p {
+    font-size: 2rem;
+}
+
+main div {
+    font-size: 1.6rem;
+}
+
+/* rem esta en funcion al tamañao de fuentte de la etiqueta html */

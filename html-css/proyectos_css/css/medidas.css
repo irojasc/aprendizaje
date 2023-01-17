@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* main { ->>100% es de la fuente base
+    background-color: red;
+    width: 100%;
+    height: 500px;
+} */
+
+/* p { px es un medida absoluta
+    font-size: 18px;
+    font-family: sans-serif;
+} */
+
+body {
+    font-size: 20px;
+}
+
+.text-container {
+    font-size: 1.5em;
+}
+
+.text-container div {
+    font-size: 1.5em;
+}

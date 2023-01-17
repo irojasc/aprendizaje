@@ -1,0 +1,29 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Aplicar el color rojo al parrafo consecutivo al h2 */
+/* h2 + p {  Ejemplo para el caso de hermanos adyacentes
+    color: red;
+}  */
+
+/* alt + 126 = ~ */
+/* h2 ~ p { Hermano general aplica cambios a los <p> que estan al mismo nivel
+    color: red;
+} */
+
+
+/* div > p{ Cambio de estilos a hijo directo
+    color: red;
+} */
+
+/* combinador descendiente */
+/* div p : todos los elementos <p> que estan dentro del contenedor div */
+ div p{
+    color:red;
+ }
+
+
+
