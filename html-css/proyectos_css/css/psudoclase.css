@@ -1,0 +1,48 @@
+
+body {
+    background-color: whitesmoke;
+}
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: azure;
+    background-color: royalblue;
+    border-radius: 1.5em;
+}
+
+.main-nav {
+    margin-top: 10px;
+    padding-left: 0px;
+    list-style: none;
+    text-decoration: none;
+    background-color: #13a4a4;
+
+}
+
+.main-nav__item {
+    display:inline-block;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    font-family: sans-serif;
+}
+
+
+.main-nav__item a:hover{  /* hover activa un estilo cuando ocurre el evento puntero sobre elemento */
+    color: blue;
+}
+
+.main-nav__item a:active{  /* active activa un estilo cuando ocurre click sostenido en elemento */
+    color: red;
+}
+
+.main-nav__item a::after { /* after define un estilo de una parte especifica de un elemento */
+    content: " | ";
+}

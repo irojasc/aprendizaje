@@ -1,0 +1,14 @@
+/* * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+} */
+
+html {
+    font-size: 15px;
+    font-family: verdana;
+}
+
+h1 {
+    font-size: inherit; /* inherit indica que esta obliga a heredar el tamaño de fuente del padre html */
+}

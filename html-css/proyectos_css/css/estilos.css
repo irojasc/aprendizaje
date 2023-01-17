@@ -1,0 +1,24 @@
+#hola 
+{
+    margin: 0;
+    color:  green;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Arial Narrow';
+}
+
+/* Como funcionan las clases
+.-  */
+.parrafo {
+    color: red;
+}
+
+/* Como funcionan los ID's */
+#texto {
+    color: purple;
+    font-size: 24px;
+}
+
+/* Existen selectores por elemento, por clase y por ID */
+
+
