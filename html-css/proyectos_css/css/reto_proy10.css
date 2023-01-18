@@ -1,0 +1,54 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+html {
+    font-size: 62.5%;
+}
+
+
+main {
+    background-color: rgb(74, 151, 133);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+#two {
+    height: 50;
+    width: 100px;
+    margin-left: 125px;
+    border: 0.1px solid;
+    border-radius: 15px;
+    margin-left: 200px;
+    position: relative;
+    top: 50px;
+    background-color: beige;
+    text-align: center;
+}
+
+#three {
+    height: 225px;
+    width: 250px;
+    font-size: 1.5rem;
+    margin-left: 125px;
+    background-color: rgb(142, 68, 173);
+    box-shadow: 2px 2px 2px rgb(46, 134, 193);
+    border-radius: 10px;
+    border: 0.1px solid;
+    font-family: sans-serif;
+}
+
+#three p{
+    margin-top: 60px;
+    color: yellow;
+    text-align: center;
+}
+
