@@ -12,15 +12,35 @@ body{
     font-size: 1.6rem;
 }
 
-.container {
-    border: 1.3rem solid black;
+/* .container {
+    border: 0.3rem solid black;
     height:  50vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content:flex-start; */
     /* flex-direction: column; */
     /* flex-wrap: wrap; /* cambia la posicion de los elementos segun el tamaño del viewport */
-    /* justify-content: space-evenly; /*  ubica los elemento al  centro dentro del contenedor*/
+    /* justify-content: space-evenly; /*  ubica los elemento al  centro dentro del contenedor
+} */
+
+/* .container { */
+    /* border: 0.3rem solid black; */
+    /* la combinacion es: DISPLAY: FLEX y ALIGN-ITEMS: */
+    /* display: flex; */
+    /* align-items: center; */
+    /* align-items: stretch; cada contenedor toma la altura de contenedor padre*/
+    /* align-items: baseline; cada contenedor toma la altura del contenido*/
+    /* flex-direction:row; */
+    /* height:  50vh; */
+/* } */
+
+.container {
+    border: 0.3rem solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
 }
 
 .box {
@@ -28,11 +48,22 @@ body{
     height: 10rem;
 }
 
+/* .box {
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+} */
+
 .box1 {
     background-color: blue;
+    /* order: 1; este se queda en la posicion 1 */
+    /* flex-grow: 1; hace crecer el ancho del contenedor */
 }
 .box2 {
     background-color: blueviolet;
+    /* order: 3; box 2 pasa a la posicion 3 */
+    /* importante: los container ordenados pasan a lado derecho */
+    /* flex-grow: 1; hace crecer el ancho del contenedor */
 }
 .box3 {
     background-color: burlywood;
@@ -42,7 +73,10 @@ body{
 }
 .box5 {
     background-color: coral;
+    /* order: 4; box5 pasa al orden4 */
 }
 .box6 {
     background-color: salmon;
+    /* order: 2; */
+    /* order: 4; box6 pasa al orden2 */
 }

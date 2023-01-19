@@ -1,0 +1,47 @@
+@font-face{
+    font-family: ‘Ubuntu-Regular’;
+    src: url(./ubuntu/Ubuntu-Regular.ttf);
+    }
+
+
+:root { /* root hace referencia a la etiqueta padre html, punto de partida */
+    --primary-color: #003476;
+    --secundary-color: #b4d2f7;
+    --header-size: 4rem;
+    --font: 1.8rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+
+main {
+    width: 100vw; 
+    height: 70vh;
+    font-size: var(--font);
+}
+
+h1 {
+    font-size: var(--header-size);
+    text-align: center;
+    font-family: ‘Ubuntu-Regular’;
+}
+
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--secundary-color);
+}
+
