@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.picture {
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+}
+
+img {
+    width: 100%;
+}
