@@ -12,7 +12,7 @@ html {
 .header {
     background-color: white;
     box-shadow: 0 4px 3px rgb(0 0 0 / 25%);
-    height: 11.4rem;
+    height: 9.4rem;
     width: 100vw;
     border: 1px;
     text-align: left;
@@ -67,8 +67,10 @@ main .sidebar {
     border-radius: 2rem;
 }
 
-img {
+.sidebar-child img {
     object-fit: fill;
+    width: 180px; 
+    height: 110px;
     border-radius: 2rem;
 }
 
@@ -137,6 +139,11 @@ img {
         position: relative;
         top: 1rem;
         right: 0.5rem;
+    }
+
+    #figura {
+        padding: 1.2rem 0.2rem;
+        width: 15.4rem;
     }
     
 }
