@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&amp;display=swap" rel="stylesheet"></link href>
+    <title>Myfirstcard</title>
+    <style>
+        html{
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body{
+             display: grid;
+             justify-content: center;
+        }
+
+        #container{
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            width: 300px;
+            height: 450px;
+            border-radius: 15px 15px 15px 15px;
+            border: 1px solid black;
+        }
+
+        header{
+            position: relative;
+            width: 100%;
+            min-height: 150px;
+            border-radius: 15px 15px 0px 0px ;
+        }
+
+        #avatar{
+           position: relative;
+           display: flex;
+           justify-content: center;
+           width: 100%;
+           min-height: 150px ;
+           border-left: 0.5px solid gray;
+           border-right: 0.5px solid gray;
+           font-size: small; 
+        }
+
+        footer{
+            position: relative;
+            width: 100%;
+            min-height: 150px;
+            background-color:#5DADE2;
+            border-radius: 0px 0px 15px 15px ;   
+        }
+
+
+        header img{
+            position: absolute;
+            border-radius: 15px 15px 0px 0px;
+            width: 100%;        
+            height: 150px;
+        }
+
+        #avatar img{
+            position: absolute;
+            border: 2px solid white;
+            top: -50px;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;   
+        }
+
+
+        button{
+            position: absolute;
+            background-color: #2874A6  ;
+            width: 150px;
+            height: 50px;
+            top: 66%;
+            border-radius: 0px 0px 0px 15px;
+            border-color: transparent;
+        }
+
+        #con{
+            /*Overwrite the style for contact button using id*/
+            right: 0%;
+            border-radius: 0px 0px 15px 0px;
+        }
+        
+
+        button:hover{
+            background-color: #21618C;
+        }
+
+        #social_icons{
+            display: flex;
+            position: absolute;
+            width: 100%;
+            top: 15%;
+            flex-direction: row;
+            justify-content:  space-around;
+        }
+
+        .icons{
+            width: 50px;
+            height: 50px;
+        }
+
+        .icons:hover{
+            transform : scale(1.5);
+        }
+        
+        #desc{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 55%;
+        } 
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="back">
+        </header>
+
+        <div id="avatar">
+            <img src="https://thumbs.dreamstime.com/b/cara-real-del-hombre-33714859.jpg" alt="">
+            <div id="desc">
+                <h1 style="margin: 0px ;">Mario Melendez</h1>
+                <p style="margin: 0px ;">Ingeniero en sistemas </p>
+            </div>
+        </div>
+        
+        <footer id="info">
+            <div id="social_icons">
+                <img class="icons" src="https://cdn1.iconfinder.com/data/icons/social-media-outline-6/128/SocialMedia_LinkedIn-Outline-256.png" alt="linkedin">
+                <img class="icons" src="https://cdn1.iconfinder.com/data/icons/social-media-outline-6/128/SocialMedia_Twitter-Outline-256.png" alt="twitter">
+                <img class="icons" src="https://cdn1.iconfinder.com/data/icons/social-media-outline-6/128/SocialMedia_Twitch-Outline-256.png" alt="twich">
+            </div>
+            <button>Portafolio</button>
+            <button id="con">Contact</button>
+        </footer>
+    </div>
+</body>
+</html>
