@@ -1,0 +1,39 @@
+<!-- En esta parte se mencion a la funcion especial minmax y repeat -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 5px solid #e1bee7;
+            background-color: #fff1ff;
+            display: grid;
+            grid-template-columns: minmax(135px, 300px) 200px minmax(135px, 250px);
+            /* el minmax es para definir el tamaño minimo y maximo que puede tener una celda */
+            grid-template-rows: repeat(3, auto);
+            /* el repeat es repetir la creacion de una fila o columna (#veces, tamaño px) */
+        }
+
+        .item {
+            border: 5px solid #00bcd4;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Hola, soy la celda 1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">Hola, soy la celda 3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+
+    
+</body>
+</html>

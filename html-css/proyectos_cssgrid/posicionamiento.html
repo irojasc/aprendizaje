@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 5px solid #e1bee7;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+            grid-template-rows: 75px 75px 75px;
+            /* grid-template-areas: 
+            "header header header"
+            "side main main"
+            "side main main"; */
+            /* tambien se puede  utilizar grid-template-areas ^^^^ */
+            place-content: center;
+
+        }
+
+        .item{
+            font-size: 4rem;
+        }
+
+        .item1 {
+            border: 5px solid #f8bbd0;
+            background-color: #ffeeff;
+            grid-column-start: 1; /* version detallada */
+            grid-column-end: 4; /* version detallada */
+            /* tambien se puede  utilizar grid-template-areas ^^^^ */
+            /* grid-area: header; */
+            
+        }
+        .item2 {
+            border: 5px solid #e1bee7;
+            background-color: #fff1ff;
+            grid-row: 2 / 4; /* version directa para file o columna */
+            /* tambien se puede  utilizar grid-template-areas ^^^^ */
+            /* grid-area: side; */
+        }
+
+        .item3 {
+            border: 5px solid #b2ebf2;
+            background-color: #e5ffff;
+            grid-area: 2 / 2 / 4 / 4; /* version de area para caso de mas 1 fila o mas de 1 columna o ambos */
+            /* tambien se puede  utilizar grid-template ^^^^  */
+            /* grid-area: main; */
+            place-self: center; 
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+    
+</body>
+</html>
