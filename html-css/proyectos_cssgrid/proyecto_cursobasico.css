@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    background-color: #fdfdfdff;
+    padding: 30px;
+}
+
+.best-food {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto ,50%));
+    border-radius: 10px;
+    box-shadow: 4px 6px 9px -2px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 4px 6px 9px -2px rgba(0,0,0,0.48);
+    -moz-box-shadow: 4px 6px 9px -2px rgba(0,0,0,0.48);
+    min-width: 300px;
+    background: black;
+    color: white;
+}
+
+.best-food h1 {
+    font-size: 4.5rem;
+}
+
+.best-food p {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    line-height: 20px;
+}
+
+.best-food button {
+    font-size: 1.5rem;
+    margin-top: 35px;
+    border: none;
+    background-color: orange;
+    border-radius: 5px;
+    width: 170px;
+    height: 40px;
+    color: white;
+}
+
+.best-food__text {
+    place-self: center;
+    padding: 0 60px;
+    z-index: 9;
+}
+
+.services{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    text-align: center;
+    min-width: 300px;
+}
+
+.services__grid {
+    width: 100%;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(auto, 200px));
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 6px 9px -2px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 4px 6px 9px -2px rgba(0,0,0,0.48);
+    -moz-box-shadow: 4px 6px 9px -2px rgba(0,0,0,0.48);
+    justify-content: center;
+}
+
+.services__grid .video {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    display: block;
+    object-fit: cover;
+}
+
+.dish34{
+    align-self: end;
+    justify-self: center;
+}
+
+
+.home-menu{
+    width: 100%;
+    min-width: 300px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.home-menu__grid {
+    margin: 0 auto;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    border-radius: 10px;
+    box-shadow: 4px 6px 9px -2px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 4px 6px 9px -2px rgba(0,0,0,0.48);
+    -moz-box-shadow: 4px 6px 9px -2px rgba(0,0,0,0.48);
+}
+
+.img_plate{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img_plate:hover{
+    transform:  scale(1.3);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px){
+
+    .best-food img{
+        display: none;
+    }
+
+    .best-food {
+        grid-template-columns: 1fr;
+        background-image: url(./imgs_proyecto/hero-removed.png);
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: white;
+        width: fit-content;
+    }
+
+    .best-food::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, black 20%, rgba(0, 0, 0, 0));
+    }
+
+    .services {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .services__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+        grid-template-rows: 1fr;
+        min-width: 300px;
+        justify-content: center;
+    }
+
+}
