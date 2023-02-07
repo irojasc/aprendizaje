@@ -81,7 +81,7 @@ a {
     margin-right: 35px;
 }
 
-main {
+.home-main {
     width: 100%;
     height: calc(100vh - 113px);
     background-image: url('../assets/img/Cover.png');
