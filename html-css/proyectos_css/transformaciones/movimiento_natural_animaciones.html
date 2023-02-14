@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: plum;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: transform 1.5s linear; /* esto define la velocidad de regreso 1 TIP*/ 
+            display: none;
+        }
+
+        div:hover{            
+            transform: translateX(200px);
+            transition: transform 1s linear; /* este define la velocidad de ida 1 TIP*/
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .nav > li{
+            display: inline-block;
+            margin-right: 15px;
+        }
+        
+        ul li > a {
+            text-decoration: none;
+        }
+
+        .nav li ul{
+            display: block;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 1s;
+            transition-delay: 300ms;
+        }
+
+        .nav li:hover > ul{
+            opacity: 1;
+            transition: opacity 1s;
+            transition-delay: 300ms;
+        }
+
+        .nav li ul li{
+            position: relative;
+        }
+
+        .nav li ul li{
+            right: -20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <ul class="nav">
+        <li>
+            <a href="">Mujer</a>
+            <ul>
+                <li><a href="">Camisetas</a></li>
+                <li><a href="">Pantalones</a></li>
+                <li><a href="">Shorts</a>
+                    <ul>
+                        <li><a href="">Cortos</a></li>
+                        <li><a href="">Largos</a></li>
+                        <li><a href="">Transparentes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="">Hombre</a></li>
+        <li><a href="">Niños</a></li>
+    </ul>
+</body>
+</html>

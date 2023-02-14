@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 13%, rgba(9,9,121,1) 27%, rgba(208,55,110,1) 50%, rgba(136,191,54,1) 67%, rgba(0,212,255,1) 100%);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: none; /*Desactivar esto para probar lo de prueba_2 o prueba_3*/
+        }
+        .circle:hover{
+            /*transform: scale(1.2); /*esto aplica para los dos ejes*/
+            /*transform: scale(0.8, 1.2); /*esto aplica para los dos ejes con valores distinttos*/
+            transform: scaleX(1.5); /*esto solo aplica para el eje x*/
+        }
+
+        .prueba_2{
+            background-color: lightpink;
+            border-radius: 20%;
+            width: 100px;
+            height: 100px;
+            display: none; /*Desactivar esto para probar circle o prueba_3*/
+        }
+
+        .prueba_2:hover{
+            /*transform: skew(20deg); /*esto aplica para el eje x e y */
+            transform: skewY(20deg); /*esto aplica para el eje y */
+        }
+
+
+        .prueba_3{
+            background-color: lightsalmon;
+            width: 100px;
+            height: 100px;
+            transform-origin: left top; /* Esto cambia el eje de rotacion a la esquina superior izquierda, aplica para cualquier propiedad de transform*/
+        }
+
+        .prueba_3:hover{
+            transform: rotate(20deg); /*esto aplica para el eje y */
+        }
+
+
+        div
+    </style>
+</head>
+<body>
+    <div class="circle">
+    </div>
+
+    <div class="prueba_2">
+        </div>
+
+    <div class="prueba_3"></div>
+    
+</body>
+</html>

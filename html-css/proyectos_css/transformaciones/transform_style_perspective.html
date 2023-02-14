@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 5px solid hotpink;
+            perspective: 15px;
+            display: none;  /*Desactivar esto para probar la parte de perspective*/
+        }
+
+        .item{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: papayawhip;
+            border: 3px solid red;
+            opacity: 0.5;
+            transform-style: preserve-3d;
+            transform: rotateX(20deg);
+        }
+
+        .padre{
+            transform-style: preserve-3d;
+            position: relative;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .hijos{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .front{
+            background-color: red;
+            
+        }
+
+        .back{
+            background-color: blue;
+            transform: rotateY(180deg);
+        }
+
+        .padre:hover{
+            transform: rotateY(180deg)
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+        </div>
+    </div>
+
+    <div class="padre">
+        <div class="hijos front"></div>
+        <div class="hijos back"></div>
+    </div>
+</body>
+</html>
