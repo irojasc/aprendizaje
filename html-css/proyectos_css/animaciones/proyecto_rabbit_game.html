@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body {
+            counter-reset: game;
+        }
+
+        input:checked {
+            counter-increment: game;
+        }
+
+        .total-count::after{
+            content: counter(game);
+        } */
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .phone{
+            position: relative;
+            width: 320px;
+            height: 600px;
+            background-color: ;
+            border: 8px solid black;
+            border-radius: 40px;
+            background-color: #ccefff;
+            box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.75);;
+        }
+
+        .layer-1-2{
+            position: absolute;
+            width: 80px;
+            background-color: white;
+            bottom: 0px;
+            border-radius: 40px 40px 0 0;
+            border: 1px solid black;
+        }
+
+        .left-ear-outter{
+            position: absolute;
+            width: 20px;
+            height: 50px;
+            border-radius: 90%;
+            background-color: #fff;
+            left: 10px;
+            top: -35px;
+        }
+
+        .right-ear-outter{
+            position: absolute;
+            width: 20px;
+            height: 50px;
+            border-radius: 90%;
+            background-color: #fff;
+            right: 10px;
+            top: -35px;
+        }
+
+        .head-eye{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: black;
+            top: 20px;
+            animation-name: blink;
+        }
+
+        @keyframes blink{
+            0% {
+                
+            }
+
+            5%{
+
+            }
+
+            10%{
+
+            }
+        }
+
+        .head-eye-left{
+            left: 20px;
+        }
+
+        .head-eye-right{
+            right: 20px;
+        }
+
+        .layer-1{
+            height: 440px;
+            right: 60px;
+            z-index: 1;
+        }
+
+        .layer-2{
+            height: 440px;
+            left: 60px;
+            z-index: 2;
+        }
+
+        .layer-3{
+            position: absolute;
+            width: 220px;
+            height: 400px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            background: rgba(196, 74, 4, 1);
+            z-index: 3;
+        }
+
+        .layer-4{
+            height: 340px;
+            left: 20px;
+            position: absolute;
+            z-index: 4;
+        }
+        .layer-5{
+            position: absolute;
+            width: 210px;
+            height: 300px;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 136, 0, 1);
+            border-radius: 0 0 0 25px;
+            z-index: 5;
+
+        }
+        .layer-6{
+            height: 240px;
+            left: 210px;
+            position: absolute;
+            z-index: 6;
+        }
+        .layer-7{
+            position: absolute;
+            width: 180px;
+            height: 200px;
+            right: 0;
+            bottom: 0;
+            background: rgba(196, 74, 4, 1);
+            border-radius: 0 0 30px 0;
+            z-index: 7;
+        }
+
+        .layer-8{
+            position: absolute;
+            z-index: 8;
+        }
+        .layer-9{
+            position: absolute;
+            z-index: 9;
+        }
+
+        .layer-10{
+            position: absolute;
+            z-index: 10;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- <ul style="list-style-type: none;">
+        <li><input type="checkbox"><div class="shield"></div></li>
+        <li><input type="checkbox"><div class="shield"></div></li>
+        <li><input type="checkbox"><div class="shield"></div></li>
+        <li><input type="checkbox"><div class="shield"></div></li>
+        <li><input type="checkbox"><div class="shield"></div></li>
+        <li><input type="checkbox"><div class="shield"></div></li>
+        <li><input type="checkbox"><div class="shield"></div></li>
+        <li><input type="checkbox"><div class="shield"></div></li>
+        <li><input type="checkbox"><div class="shield"></div></li>
+        <li><input type="checkbox"><div class="shield"></div></li>
+        <h3 class="total-count">Score: </h3>
+    </ul> -->
+
+    <div class="phone">
+        <div class="layer layer-1-2 layer-1">
+            <div class="left-ear-outter"></div>
+            <div class="right-ear-outter"></div>
+            <div class="head-eye head-eye-left"></div>
+            <div class="head-eye head-eye-right"></div>
+        </div> <!-- bunny -->
+        <div class="layer layer-1-2 layer-2">
+            <div class="left-ear-outter"></div>
+            <div class="right-ear-outter"></div>
+            <div class="head-eye head-eye-left"></div>
+            <div class="head-eye head-eye-right"></div>
+        </div> <!-- bunny -->
+        <div class="layer layer-3"></div>  <!-- wall1 -->
+        <div class="layer layer-1-2 layer-4">
+            <div class="left-ear-outter"></div>
+            <div class="right-ear-outter"></div>
+            <div class="head-eye head-eye-left"></div>
+            <div class="head-eye head-eye-right"></div>
+        </div> <!-- bunny -->
+        <div class="layer layer-5"></div> <!-- wall -->
+        <div class="layer layer-1-2 layer-6">
+            <div class="left-ear-outter"></div>
+            <div class="right-ear-outter"></div>
+            <div class="head-eye head-eye-left"></div>
+            <div class="head-eye head-eye-right"></div>
+        </div> <!-- bunny -->
+        <div class="layer layer-7"></div> <!-- wall -->
+        <div class="layer layer-8"></div>
+        <div class="layer layer-9"></div>
+        <div class="layer layer-10"></div>
+    </div>
+    
+</body>
+</html>
