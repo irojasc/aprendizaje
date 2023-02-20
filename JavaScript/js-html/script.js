@@ -11,8 +11,9 @@ const parrafito = document.querySelector('.parrafito');
 const pid = document.querySelector('#pid');
 const input1 = document.querySelector('input');
 const input2 = document.querySelector('#input2-calculo');
-const btnCalcular = document.querySelector("btn-calcular");
-
+const btnCalcular = document.querySelector("#btn-calcular");
+const resultado_ = document.querySelector("#resultado");
+const formulario = document.querySelector("#formulario");
 console.log(input1.value); //
 
 console.log({
@@ -52,12 +53,32 @@ pid.append(img); // agrega el elemento <img> dentro del elemento con id = "pid"
 //pid.appendChild //tambien se puede utilizar esto
 
 
+
+//Agregar EventListener a un elemento HTML desde JS
+//btnCalcular.addEventListener('click', btnOnClick); //aqui no va con parentesis
+formulario.addEventListener('submit', sumarInputValues);
+
+
 //En esta parte se ve el ejemplo de calculadora 
 //para pasar valores strings a numero: Number(), parseInt(), colocar + delante el input
 function btnOnClick(){
     const resultado = +input1.value + +input2.value;
-    h1.innerText = "Resultado: " + resultado;
+    resultado_.innerText = "Resultado: " + resultado;
 }
+
+function sumarInputValues(event){
+    console.log(event);
+    event.preventDefault(); //esta parte realiza la magia de no refrescar la pagina
+    const resultado = +input1.value + +input2.value;
+    resultado_.innerText = "Resultado: " + resultado;
+}
+
+
+
+
+
+
+
 
 
 
