@@ -45,7 +45,7 @@ h1.classList.remove('rojo'); //esto retira la clase rojo del elemento HTML
 
 /*como crear un element nuevo de HTML*/
 console.log(document.createElement('spam')); //solo basta poner el nombre, luego la funcion ya se encarga de abrir y cerrar el elemento
-const img = document.createElement('img');
+const img = document.createElement('img'); //crea el elemento HTML dentro de js
 img.setAttribute('src', 'https://i.tribune.com.pk/media/images/Yuga-Labs-Bored-Ape-Yacht-Club-44661639472731-0/Yuga-Labs-Bored-Ape-Yacht-Club-44661639472731-0.jpg');
 console.log(img);
 pid.innerHTML = ""; //esto lo que hace es borrar el contenido html del elemento
