@@ -10,8 +10,15 @@ console.group('Cuadrado y Triangulo');
 /* var ladoTri=prompt("Por favor ingrese los lados del triangulos").split(' '); */
 /* perimetroCuadrado(Number(lado)); */
 /* calculoTriangulo(Number(ladoTri[0]), Number(ladoTri[1]), Number(ladoTri[2])) */
-var radio=prompt("Por favor ingrese el radio del circulo");
-circleMaths(radio);
+
+/* CALCULO DE PROPIEDADDES DE UN CIRCULO */
+//var radio=prompt("Por favor ingrese el radio del circulo");
+//circleMaths(radio);
+
+/* CALCULO DE LA ALTURA DE UN TRIANGULO ISOSCELES */
+var ladoIsosc =prompt("Por favor, ingrese el lado y la base del ttriangulo isosceles").split(' ');
+heightCalculate(Number(ladoIsosc[0]), Number(ladoIsosc[1]));
+
 
 function  perimetroCuadrado(lado){
     perimetro = 4 * lado;
@@ -32,6 +39,8 @@ function calculoTriangulo(lado1, lado2, lado3){
 console.groupEnd('Cuadrado y Triangulo');
 
 
+
+/* Esta parte calcula las propiedades de un circulo */
 console.group('circle maths')
 
 function circleMaths(radio){
@@ -42,6 +51,20 @@ function circleMaths(radio){
 } 
 
 console.groupEnd('circle maths');
+
+/* Esta parte calcula la altura de un triangulo isoceles no equilatero */
+
+function heightCalculate(lado, base){
+    if(lado == base)
+        console.warn('Este no es un triangulo isosceles');
+    else{
+        var height = Math.sqrt(Math.pow(lado, 2) - (Math.pow(base, 2) * 0.25));
+        alert("La altura del triangulo Isosceles es: " + height);
+    }
+}
+
+
+
 
 
 
