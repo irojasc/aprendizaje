@@ -72,14 +72,3 @@ function sumarInputValues(event){
     const resultado = +input1.value + +input2.value;
     resultado_.innerText = "Resultado: " + resultado;
 }
-
-
-
-
-
-
-
-
-
-
-
