@@ -16,8 +16,9 @@ console.group('Cuadrado y Triangulo');
 //circleMaths(radio);
 
 /* CALCULO DE LA ALTURA DE UN TRIANGULO ISOSCELES */
-var ladoIsosc =prompt("Por favor, ingrese el lado y la base del ttriangulo isosceles").split(' ');
-heightCalculate(Number(ladoIsosc[0]), Number(ladoIsosc[1]));
+// var ladoIsosc =prompt("Por favor, ingrese el lado y la base del ttriangulo isosceles").split(' ');
+var ladoIsosc = [30, 10];
+// heightCalculate(Number(ladoIsosc[0]), Number(ladoIsosc[1]));
 
 
 function  perimetroCuadrado(lado){

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: grid;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        #precio::-webkit-outer-spin-button,
+        #precio::-webkit-inner-spin-button {
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+        }
+
+        form{
+            border: 1px solid black;
+            width: fit-content;
+            padding: 5px;
+            place-self: center;
+            background-color: palevioletred;
+            border-radius: 10px;
+        }        
+
+        input[type=number], button {
+            display: block;
+            margin: 10px auto 10px;
+            width: 90%;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        p{
+            margin: 0 auto;
+            color: yellowgreen;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="precio">
+            <h3>Precio</h3>
+            <input placeholder="Ingrese precio" id="precio" type="number">
+        </label>
+        <label for="discount">
+            <h3>Descuento</h3>
+            <input placeholder="Ingrese descuento" id="discount" type="number" min="0" max="100" onkeydown="return false" value="0">
+        </label>
+        <label for="gift-card">
+            <h3>Cupon de descuento</h3>
+            <input placeholder="Ingrese cupon de descuento" id="gift-card" type="text">
+        </label>
+        <button type="button" id="btn_discount">Calcular descuento</button>
+    </form>
+    <p id="result">Esperandoooo  ....</p>
+
+<script src="./descuentos.js"></script>
+</body>
+</html>
