@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin: 5px 0;
+        }
+
+        div{
+            text-align: center;
+        }
+
+        button{
+            display: block;
+            margin: 5px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <label for="values">
+        <p>Ingrese los valores separados por ","</p>
+        <input id="values" type="text">
+        </label>
+        <button class="btn_calculate">Calcular</button>
+        <h3 id="valor_promedio">El valor promedio es:</h3>
+        <h3 id="valor_mediana">El valor de la mediana es:</h3>
+        <h3 id="valor_moda">El valor de la moda es:</h3>
+    </div>
+
+    <script src="./mean.js"></script>
+</body>
+</html>
