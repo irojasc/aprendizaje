@@ -1,6 +1,22 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
 
+
+###curso-asincronismo
+
+/curso-asincronismo/scr/async/node_modules/*
+/curso-asincronismo/scr/async/package.json
+/curso-asincronismo/scr/async/package-lock.json
+
+/curso-asincronismo/scr/callback/node_modules/*
+/curso-asincronismo/scr/callback/package.json
+/curso-asincronismo/scr/callback/package-lock.json
+
+/curso-asincronismo/scr/promise/node_modules/*
+/curso-asincronismo/scr/promise/package.json
+/curso-asincronismo/scr/promise/package-lock.json
+
+
 ### VisualStudioCode ###
 .vscode
 !.vscode/settings.json
